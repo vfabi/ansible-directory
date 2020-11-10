@@ -1,4 +1,4 @@
-# Ansible dynamic inventory script to get data from VMware ESXI host
+# Ansible dynamic inventory script to get data from VMware ESXI
 
 
 # Technology stack
