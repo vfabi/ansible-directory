@@ -1,0 +1,6 @@
+---
+esxi_host: ""
+esxi_port: 443
+esxi_username: ""
+esxi_password: ""
+group_by: "vm_annotation_group"
