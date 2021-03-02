@@ -45,6 +45,7 @@ python inventory.py --list  # outputs VM list data json object
 ansible -i inventory.py all --list-hosts  # get hosts list
 ansible -i inventory.py all -m ansible.builtin.ping"  # executes ansible ad-hoc commands against inventory hosts
 ansible -i inventory.py all -m raw -a "uname -a"  # executes ansible ad-hoc commands against inventory hosts
+ansible -i inventory.py all -m raw -a "uname -a" --extra-vars "ansible_user=root ansible_password=XXXXXXX"  # executes ansible ad-hoc commands against inventory hosts
 ansible-playbook -i inventory.py playbook.yaml  # executes ansible playbook command against inventory hosts
 ```
 
