@@ -37,8 +37,9 @@ group_by: "vm_os_type_id"  # Ansible hosts grouping key
 
 
 # Usage
-1. Create inventory.yaml configuration file or export environment variables.  
-2. Use dynamic inventory script `inventory.py` in common with Ansible, or standalone.  
+1. Install python requirements from requirements.txt (`pip install -r requirements.txt`).  
+2. Create inventory.yaml configuration file or export environment variables.  
+3. Use dynamic inventory script `inventory.py` in common with Ansible, or standalone.  
 ```
 python inventory.py --list  # outputs VM list data json object
 ansible -i inventory.py all --list-hosts  # get hosts list
